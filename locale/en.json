@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Usage cost",
+    "description": "Estimates what each completed turn costs under DeepSeek API prices. Adds a Usage estimate entry to the left sidebar, shows an estimated amount under every answer, and totals today, this month, this year and all time. Amounts are estimates computed from provider-reported tokens and the built-in price table, not an official bill."
+  }
+}

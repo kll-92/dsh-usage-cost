@@ -1,0 +1,2972 @@
+[
+  {
+    "type": "turn/start",
+    "time": 1795421675277,
+    "data": {
+      "turn": 17
+    }
+  },
+  {
+    "type": "agent/inbox/spliced",
+    "time": 1795421675277,
+    "data": {}
+  },
+  {
+    "type": "step/start",
+    "time": 1795421675297,
+    "data": {
+      "turn": 17,
+      "step": 1
+    }
+  },
+  {
+    "type": "user/message",
+    "time": 1795421675298,
+    "data": {
+      "content": [
+        {
+          "type": "text",
+          "text": "用真实的日志跑一遍折叠"
+        }
+      ]
+    }
+  },
+  {
+    "type": "request/header",
+    "time": 1795421675299,
+    "data": {}
+  },
+  {
+    "type": "session-log-deepseek/delivery-accepted",
+    "time": 1795421675555,
+    "data": {}
+  },
+  {
+    "type": "assistant/message",
+    "time": 1795421683139,
+    "data": {
+      "turn": 17,
+      "step": 1,
+      "usage": {
+        "inputTokens": 240,
+        "outputTokens": 1467,
+        "cacheReadTokens": 237312,
+        "cacheWriteTokens": 0,
+        "totalTokens": 239019
+      },
+      "message": {
+        "id": "a39fa450-db14-4802-9bf7-c35bf00243b3",
+        "source": {
+          "kind": "model",
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "replayState": {
+            "response": {
+              "kind": "deepseek-messages",
+              "version": 1,
+              "model": "deepseek-flash"
+            },
+            "blocks": [
+              {
+                "type": "reasoning",
+                "signature": "4d908b3b-dd38-4924-b69f-61f6391e187d"
+              },
+              {
+                "type": "tool-call"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "tool/call",
+    "time": 1795421683141,
+    "data": {
+      "turn": 17,
+      "step": 1
+    }
+  },
+  {
+    "type": "tool/result",
+    "time": 1795421683157,
+    "data": {
+      "turn": 17,
+      "step": 1
+    }
+  },
+  {
+    "type": "step/end",
+    "time": 1795421683157,
+    "data": {
+      "turn": 17,
+      "step": 1
+    }
+  },
+  {
+    "type": "step/start",
+    "time": 1795421683176,
+    "data": {
+      "turn": 17,
+      "step": 2
+    }
+  },
+  {
+    "type": "session-log-deepseek/delivery-accepted",
+    "time": 1795421683510,
+    "data": {}
+  },
+  {
+    "type": "assistant/message",
+    "time": 1795421684180,
+    "data": {
+      "turn": 17,
+      "step": 2,
+      "usage": {
+        "inputTokens": 223,
+        "outputTokens": 112,
+        "cacheReadTokens": 238848,
+        "cacheWriteTokens": 0,
+        "totalTokens": 239183
+      },
+      "message": {
+        "id": "f5b36900-fb79-48e4-b60a-29533aaeb947",
+        "source": {
+          "kind": "model",
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "replayState": {
+            "response": {
+              "kind": "deepseek-messages",
+              "version": 1,
+              "model": "deepseek-flash"
+            },
+            "blocks": [
+              {
+                "type": "reasoning",
+                "signature": "59eb0093-0d38-4be1-9a71-83007f629ab6"
+              },
+              {
+                "type": "tool-call"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "tool/call",
+    "time": 1795421684180,
+    "data": {
+      "turn": 17,
+      "step": 2
+    }
+  },
+  {
+    "type": "job/registered",
+    "time": 1795421684187,
+    "data": {}
+  },
+  {
+    "type": "job/settled",
+    "time": 1795421684443,
+    "data": {}
+  },
+  {
+    "type": "tool/result",
+    "time": 1795421684443,
+    "data": {
+      "turn": 17,
+      "step": 2
+    }
+  },
+  {
+    "type": "step/end",
+    "time": 1795421684444,
+    "data": {
+      "turn": 17,
+      "step": 2
+    }
+  },
+  {
+    "type": "step/start",
+    "time": 1795421684454,
+    "data": {
+      "turn": 17,
+      "step": 3
+    }
+  },
+  {
+    "type": "session-log-deepseek/delivery-accepted",
+    "time": 1795421685029,
+    "data": {}
+  },
+  {
+    "type": "assistant/message",
+    "time": 1795421687764,
+    "data": {
+      "turn": 17,
+      "step": 3,
+      "usage": {
+        "inputTokens": 221,
+        "outputTokens": 540,
+        "cacheReadTokens": 238976,
+        "cacheWriteTokens": 0,
+        "totalTokens": 239737
+      },
+      "message": {
+        "id": "bca7893e-3ce3-4588-8e1b-c83785b4be4e",
+        "source": {
+          "kind": "model",
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "replayState": {
+            "response": {
+              "kind": "deepseek-messages",
+              "version": 1,
+              "model": "deepseek-flash"
+            },
+            "blocks": [
+              {
+                "type": "reasoning",
+                "signature": "18cfa1ec-1da7-4313-b9a4-8d04ddd9b1fa"
+              },
+              {
+                "type": "tool-call"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "tool/call",
+    "time": 1795421687765,
+    "data": {
+      "turn": 17,
+      "step": 3
+    }
+  },
+  {
+    "type": "tool/result",
+    "time": 1795421687780,
+    "data": {
+      "turn": 17,
+      "step": 3
+    }
+  },
+  {
+    "type": "step/end",
+    "time": 1795421687780,
+    "data": {
+      "turn": 17,
+      "step": 3
+    }
+  },
+  {
+    "type": "step/start",
+    "time": 1795421687799,
+    "data": {
+      "turn": 17,
+      "step": 4
+    }
+  },
+  {
+    "type": "session-log-deepseek/delivery-accepted",
+    "time": 1795421688301,
+    "data": {}
+  },
+  {
+    "type": "assistant/message",
+    "time": 1795421689679,
+    "data": {
+      "turn": 17,
+      "step": 4,
+      "usage": {
+        "inputTokens": 173,
+        "outputTokens": 108,
+        "cacheReadTokens": 239616,
+        "cacheWriteTokens": 0,
+        "totalTokens": 239897
+      },
+      "message": {
+        "id": "29c4219f-f73b-4724-87a1-379825736807",
+        "source": {
+          "kind": "model",
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "replayState": {
+            "response": {
+              "kind": "deepseek-messages",
+              "version": 1,
+              "model": "deepseek-flash"
+            },
+            "blocks": [
+              {
+                "type": "reasoning",
+                "signature": "57bbba11-f6a7-4007-8cfd-25f4fd6f24aa"
+              },
+              {
+                "type": "tool-call"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "tool/call",
+    "time": 1795421689679,
+    "data": {
+      "turn": 17,
+      "step": 4
+    }
+  },
+  {
+    "type": "job/registered",
+    "time": 1795421689686,
+    "data": {}
+  },
+  {
+    "type": "job/settled",
+    "time": 1795421690118,
+    "data": {}
+  },
+  {
+    "type": "tool/result",
+    "time": 1795421690120,
+    "data": {
+      "turn": 17,
+      "step": 4
+    }
+  },
+  {
+    "type": "step/end",
+    "time": 1795421690120,
+    "data": {
+      "turn": 17,
+      "step": 4
+    }
+  },
+  {
+    "type": "step/start",
+    "time": 1795421690140,
+    "data": {
+      "turn": 17,
+      "step": 5
+    }
+  },
+  {
+    "type": "session-log-deepseek/delivery-accepted",
+    "time": 1795421690589,
+    "data": {}
+  },
+  {
+    "type": "assistant/message",
+    "time": 1795421693244,
+    "data": {
+      "turn": 17,
+      "step": 5,
+      "usage": {
+        "inputTokens": 1354,
+        "outputTokens": 599,
+        "cacheReadTokens": 239872,
+        "cacheWriteTokens": 0,
+        "totalTokens": 241825
+      },
+      "message": {
+        "id": "2edb9fee-c6fc-45fc-acec-6c77f55a3e1a",
+        "source": {
+          "kind": "model",
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "replayState": {
+            "response": {
+              "kind": "deepseek-messages",
+              "version": 1,
+              "model": "deepseek-flash"
+            },
+            "blocks": [
+              {
+                "type": "reasoning",
+                "signature": "9d28e504-4a85-4dcc-9b8b-dfb8db407335"
+              },
+              {
+                "type": "tool-call"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "tool/call",
+    "time": 1795421693245,
+    "data": {
+      "turn": 17,
+      "step": 5
+    }
+  },
+  {
+    "type": "job/registered",
+    "time": 1795421693257,
+    "data": {}
+  },
+  {
+    "type": "job/settled",
+    "time": 1795421693282,
+    "data": {}
+  },
+  {
+    "type": "tool/result",
+    "time": 1795421693283,
+    "data": {
+      "turn": 17,
+      "step": 5
+    }
+  },
+  {
+    "type": "step/end",
+    "time": 1795421693283,
+    "data": {
+      "turn": 17,
+      "step": 5
+    }
+  },
+  {
+    "type": "step/start",
+    "time": 1795421693302,
+    "data": {
+      "turn": 17,
+      "step": 6
+    }
+  },
+  {
+    "type": "session-log-deepseek/delivery-accepted",
+    "time": 1795421693709,
+    "data": {}
+  },
+  {
+    "type": "assistant/message",
+    "time": 1795421696498,
+    "data": {
+      "turn": 17,
+      "step": 6,
+      "usage": {
+        "inputTokens": 187,
+        "outputTokens": 569,
+        "cacheReadTokens": 241792,
+        "cacheWriteTokens": 0,
+        "totalTokens": 242548
+      },
+      "message": {
+        "id": "c21b5077-9d2f-4a85-8574-a02e8b0a9f18",
+        "source": {
+          "kind": "model",
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "replayState": {
+            "response": {
+              "kind": "deepseek-messages",
+              "version": 1,
+              "model": "deepseek-flash"
+            },
+            "blocks": [
+              {
+                "type": "reasoning",
+                "signature": "0f61b4a5-2daa-4a2b-9009-e20eb1ef1087"
+              },
+              {
+                "type": "tool-call"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "tool/call",
+    "time": 1795421696499,
+    "data": {
+      "turn": 17,
+      "step": 6
+    }
+  },
+  {
+    "type": "job/registered",
+    "time": 1795421696506,
+    "data": {}
+  },
+  {
+    "type": "job/settled",
+    "time": 1795421696660,
+    "data": {}
+  },
+  {
+    "type": "tool/result",
+    "time": 1795421696660,
+    "data": {
+      "turn": 17,
+      "step": 6
+    }
+  },
+  {
+    "type": "step/end",
+    "time": 1795421696661,
+    "data": {
+      "turn": 17,
+      "step": 6
+    }
+  },
+  {
+    "type": "step/start",
+    "time": 1795421696678,
+    "data": {
+      "turn": 17,
+      "step": 7
+    }
+  },
+  {
+    "type": "session-log-deepseek/delivery-accepted",
+    "time": 1795421697158,
+    "data": {}
+  },
+  {
+    "type": "assistant/message",
+    "time": 1795421702553,
+    "data": {
+      "turn": 17,
+      "step": 7,
+      "usage": {
+        "inputTokens": 146,
+        "outputTokens": 1007,
+        "cacheReadTokens": 242432,
+        "cacheWriteTokens": 0,
+        "totalTokens": 243585
+      },
+      "message": {
+        "id": "4140c923-5acc-45c7-ae09-2df9bd01a3ff",
+        "source": {
+          "kind": "model",
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "replayState": {
+            "response": {
+              "kind": "deepseek-messages",
+              "version": 1,
+              "model": "deepseek-flash"
+            },
+            "blocks": [
+              {
+                "type": "reasoning",
+                "signature": "4cfd9d38-fefd-4dfd-a0a8-99e67cce9103"
+              },
+              {
+                "type": "tool-call"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "tool/call",
+    "time": 1795421702554,
+    "data": {
+      "turn": 17,
+      "step": 7
+    }
+  },
+  {
+    "type": "tool/result",
+    "time": 1795421702570,
+    "data": {
+      "turn": 17,
+      "step": 7
+    }
+  },
+  {
+    "type": "step/end",
+    "time": 1795421702570,
+    "data": {
+      "turn": 17,
+      "step": 7
+    }
+  },
+  {
+    "type": "step/start",
+    "time": 1795421702588,
+    "data": {
+      "turn": 17,
+      "step": 8
+    }
+  },
+  {
+    "type": "session-log-deepseek/delivery-accepted",
+    "time": 1795421703053,
+    "data": {}
+  },
+  {
+    "type": "assistant/message",
+    "time": 1795421704757,
+    "data": {
+      "turn": 17,
+      "step": 8,
+      "usage": {
+        "inputTokens": 171,
+        "outputTokens": 239,
+        "cacheReadTokens": 243456,
+        "cacheWriteTokens": 0,
+        "totalTokens": 243866
+      },
+      "message": {
+        "id": "559f2f3b-8bc0-40e1-a5dc-93d732e7e962",
+        "source": {
+          "kind": "model",
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "replayState": {
+            "response": {
+              "kind": "deepseek-messages",
+              "version": 1,
+              "model": "deepseek-flash"
+            },
+            "blocks": [
+              {
+                "type": "reasoning",
+                "signature": "2402a9f3-ba3f-462d-acae-4e432afaa1d9"
+              },
+              {
+                "type": "tool-call"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "tool/call",
+    "time": 1795421704757,
+    "data": {
+      "turn": 17,
+      "step": 8
+    }
+  },
+  {
+    "type": "tool/result",
+    "time": 1795421704770,
+    "data": {
+      "turn": 17,
+      "step": 8
+    }
+  },
+  {
+    "type": "step/end",
+    "time": 1795421704771,
+    "data": {
+      "turn": 17,
+      "step": 8
+    }
+  },
+  {
+    "type": "step/start",
+    "time": 1795421704787,
+    "data": {
+      "turn": 17,
+      "step": 9
+    }
+  },
+  {
+    "type": "session-log-deepseek/delivery-accepted",
+    "time": 1795421705138,
+    "data": {}
+  },
+  {
+    "type": "assistant/message",
+    "time": 1795421707004,
+    "data": {
+      "turn": 17,
+      "step": 9,
+      "usage": {
+        "inputTokens": 196,
+        "outputTokens": 280,
+        "cacheReadTokens": 243712,
+        "cacheWriteTokens": 0,
+        "totalTokens": 244188
+      },
+      "message": {
+        "id": "499b52ac-9bb6-4e2c-9629-f9e72cb93806",
+        "source": {
+          "kind": "model",
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "replayState": {
+            "response": {
+              "kind": "deepseek-messages",
+              "version": 1,
+              "model": "deepseek-flash"
+            },
+            "blocks": [
+              {
+                "type": "reasoning",
+                "signature": "e76328c9-852f-4bc3-8e50-751e319e9a0a"
+              },
+              {
+                "type": "tool-call"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "tool/call",
+    "time": 1795421707005,
+    "data": {
+      "turn": 17,
+      "step": 9
+    }
+  },
+  {
+    "type": "tool/result",
+    "time": 1795421707019,
+    "data": {
+      "turn": 17,
+      "step": 9
+    }
+  },
+  {
+    "type": "step/end",
+    "time": 1795421707019,
+    "data": {
+      "turn": 17,
+      "step": 9
+    }
+  },
+  {
+    "type": "step/start",
+    "time": 1795421707033,
+    "data": {
+      "turn": 17,
+      "step": 10
+    }
+  },
+  {
+    "type": "session-log-deepseek/delivery-accepted",
+    "time": 1795421707559,
+    "data": {}
+  },
+  {
+    "type": "assistant/message",
+    "time": 1795421708978,
+    "data": {
+      "turn": 17,
+      "step": 10,
+      "usage": {
+        "inputTokens": 134,
+        "outputTokens": 212,
+        "cacheReadTokens": 244096,
+        "cacheWriteTokens": 0,
+        "totalTokens": 244442
+      },
+      "message": {
+        "id": "f9d32a19-1caa-4ca9-904f-6a96e9505c26",
+        "source": {
+          "kind": "model",
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "replayState": {
+            "response": {
+              "kind": "deepseek-messages",
+              "version": 1,
+              "model": "deepseek-flash"
+            },
+            "blocks": [
+              {
+                "type": "reasoning",
+                "signature": "de8ee215-4b80-4ff5-90aa-81a87d163d16"
+              },
+              {
+                "type": "tool-call"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "tool/call",
+    "time": 1795421708979,
+    "data": {
+      "turn": 17,
+      "step": 10
+    }
+  },
+  {
+    "type": "tool/result",
+    "time": 1795421708994,
+    "data": {
+      "turn": 17,
+      "step": 10
+    }
+  },
+  {
+    "type": "step/end",
+    "time": 1795421708995,
+    "data": {
+      "turn": 17,
+      "step": 10
+    }
+  },
+  {
+    "type": "step/start",
+    "time": 1795421709011,
+    "data": {
+      "turn": 17,
+      "step": 11
+    }
+  },
+  {
+    "type": "session-log-deepseek/delivery-accepted",
+    "time": 1795421709495,
+    "data": {}
+  },
+  {
+    "type": "assistant/message",
+    "time": 1795421711173,
+    "data": {
+      "turn": 17,
+      "step": 11,
+      "usage": {
+        "inputTokens": 259,
+        "outputTokens": 161,
+        "cacheReadTokens": 244224,
+        "cacheWriteTokens": 0,
+        "totalTokens": 244644
+      },
+      "message": {
+        "id": "15abe94f-f2df-4651-857d-adf9b26109f1",
+        "source": {
+          "kind": "model",
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "replayState": {
+            "response": {
+              "kind": "deepseek-messages",
+              "version": 1,
+              "model": "deepseek-flash"
+            },
+            "blocks": [
+              {
+                "type": "reasoning",
+                "signature": "6cf89e91-53b9-4be1-b634-973af12024c4"
+              },
+              {
+                "type": "tool-call"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "tool/call",
+    "time": 1795421711174,
+    "data": {
+      "turn": 17,
+      "step": 11
+    }
+  },
+  {
+    "type": "tool/result",
+    "time": 1795421711187,
+    "data": {
+      "turn": 17,
+      "step": 11
+    }
+  },
+  {
+    "type": "step/end",
+    "time": 1795421711188,
+    "data": {
+      "turn": 17,
+      "step": 11
+    }
+  },
+  {
+    "type": "step/start",
+    "time": 1795421711261,
+    "data": {
+      "turn": 17,
+      "step": 12
+    }
+  },
+  {
+    "type": "session-log-deepseek/delivery-accepted",
+    "time": 1795421711687,
+    "data": {}
+  },
+  {
+    "type": "assistant/message",
+    "time": 1795421713032,
+    "data": {
+      "turn": 17,
+      "step": 12,
+      "usage": {
+        "inputTokens": 205,
+        "outputTokens": 149,
+        "cacheReadTokens": 244480,
+        "cacheWriteTokens": 0,
+        "totalTokens": 244834
+      },
+      "message": {
+        "id": "8bf34b22-5c9e-4b4c-beff-9301064f76f5",
+        "source": {
+          "kind": "model",
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "replayState": {
+            "response": {
+              "kind": "deepseek-messages",
+              "version": 1,
+              "model": "deepseek-flash"
+            },
+            "blocks": [
+              {
+                "type": "reasoning",
+                "signature": "70286526-83b2-44d3-97a6-7c77ad5605df"
+              },
+              {
+                "type": "tool-call"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "tool/call",
+    "time": 1795421713033,
+    "data": {
+      "turn": 17,
+      "step": 12
+    }
+  },
+  {
+    "type": "job/registered",
+    "time": 1795421713040,
+    "data": {}
+  },
+  {
+    "type": "job/settled",
+    "time": 1795421713061,
+    "data": {}
+  },
+  {
+    "type": "tool/result",
+    "time": 1795421713062,
+    "data": {
+      "turn": 17,
+      "step": 12
+    }
+  },
+  {
+    "type": "step/end",
+    "time": 1795421713062,
+    "data": {
+      "turn": 17,
+      "step": 12
+    }
+  },
+  {
+    "type": "step/start",
+    "time": 1795421713078,
+    "data": {
+      "turn": 17,
+      "step": 13
+    }
+  },
+  {
+    "type": "session-log-deepseek/delivery-accepted",
+    "time": 1795421713437,
+    "data": {}
+  },
+  {
+    "type": "assistant/message",
+    "time": 1795421714374,
+    "data": {
+      "turn": 17,
+      "step": 13,
+      "usage": {
+        "inputTokens": 320,
+        "outputTokens": 171,
+        "cacheReadTokens": 244736,
+        "cacheWriteTokens": 0,
+        "totalTokens": 245227
+      },
+      "message": {
+        "id": "a48d245e-4877-4ef5-b28a-c3a3f8f6c81e",
+        "source": {
+          "kind": "model",
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "replayState": {
+            "response": {
+              "kind": "deepseek-messages",
+              "version": 1,
+              "model": "deepseek-flash"
+            },
+            "blocks": [
+              {
+                "type": "reasoning",
+                "signature": "f04ec844-98bb-4826-817c-8b90a7c7fef8"
+              },
+              {
+                "type": "tool-call"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "tool/call",
+    "time": 1795421714374,
+    "data": {
+      "turn": 17,
+      "step": 13
+    }
+  },
+  {
+    "type": "tool/result",
+    "time": 1795421714388,
+    "data": {
+      "turn": 17,
+      "step": 13
+    }
+  },
+  {
+    "type": "step/end",
+    "time": 1795421714388,
+    "data": {
+      "turn": 17,
+      "step": 13
+    }
+  },
+  {
+    "type": "step/start",
+    "time": 1795421714400,
+    "data": {
+      "turn": 17,
+      "step": 14
+    }
+  },
+  {
+    "type": "session-log-deepseek/delivery-accepted",
+    "time": 1795421714947,
+    "data": {}
+  },
+  {
+    "type": "assistant/message",
+    "time": 1795421716526,
+    "data": {
+      "turn": 17,
+      "step": 14,
+      "usage": {
+        "inputTokens": 148,
+        "outputTokens": 227,
+        "cacheReadTokens": 245120,
+        "cacheWriteTokens": 0,
+        "totalTokens": 245495
+      },
+      "message": {
+        "id": "f96ee4ac-1dee-40c3-871f-0d3900b73082",
+        "source": {
+          "kind": "model",
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "replayState": {
+            "response": {
+              "kind": "deepseek-messages",
+              "version": 1,
+              "model": "deepseek-flash"
+            },
+            "blocks": [
+              {
+                "type": "reasoning",
+                "signature": "23a04b19-dce7-4649-bc9a-0c82a3236583"
+              },
+              {
+                "type": "tool-call"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "tool/call",
+    "time": 1795421716526,
+    "data": {
+      "turn": 17,
+      "step": 14
+    }
+  },
+  {
+    "type": "tool/result",
+    "time": 1795421716541,
+    "data": {
+      "turn": 17,
+      "step": 14
+    }
+  },
+  {
+    "type": "step/end",
+    "time": 1795421716541,
+    "data": {
+      "turn": 17,
+      "step": 14
+    }
+  },
+  {
+    "type": "step/start",
+    "time": 1795421716558,
+    "data": {
+      "turn": 17,
+      "step": 15
+    }
+  },
+  {
+    "type": "session-log-deepseek/delivery-accepted",
+    "time": 1795421716944,
+    "data": {}
+  },
+  {
+    "type": "assistant/message",
+    "time": 1795421717868,
+    "data": {
+      "turn": 17,
+      "step": 15,
+      "usage": {
+        "inputTokens": 160,
+        "outputTokens": 135,
+        "cacheReadTokens": 245376,
+        "cacheWriteTokens": 0,
+        "totalTokens": 245671
+      },
+      "message": {
+        "id": "1715f76c-0a24-4340-9e38-b37aa2ee2055",
+        "source": {
+          "kind": "model",
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "replayState": {
+            "response": {
+              "kind": "deepseek-messages",
+              "version": 1,
+              "model": "deepseek-flash"
+            },
+            "blocks": [
+              {
+                "type": "reasoning",
+                "signature": "2fbf619a-c550-42e9-90c7-2ff5da74d984"
+              },
+              {
+                "type": "tool-call"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "tool/call",
+    "time": 1795421717869,
+    "data": {
+      "turn": 17,
+      "step": 15
+    }
+  },
+  {
+    "type": "job/registered",
+    "time": 1795421717879,
+    "data": {}
+  },
+  {
+    "type": "job/settled",
+    "time": 1795421718405,
+    "data": {}
+  },
+  {
+    "type": "tool/result",
+    "time": 1795421718405,
+    "data": {
+      "turn": 17,
+      "step": 15
+    }
+  },
+  {
+    "type": "step/end",
+    "time": 1795421718406,
+    "data": {
+      "turn": 17,
+      "step": 15
+    }
+  },
+  {
+    "type": "step/start",
+    "time": 1795421718422,
+    "data": {
+      "turn": 17,
+      "step": 16
+    }
+  },
+  {
+    "type": "session-log-deepseek/delivery-accepted",
+    "time": 1795421718779,
+    "data": {}
+  },
+  {
+    "type": "assistant/message",
+    "time": 1795421720677,
+    "data": {
+      "turn": 17,
+      "step": 16,
+      "usage": {
+        "inputTokens": 206,
+        "outputTokens": 299,
+        "cacheReadTokens": 245504,
+        "cacheWriteTokens": 0,
+        "totalTokens": 246009
+      },
+      "message": {
+        "id": "c4a5edd4-b018-470a-859d-d3c47c810d03",
+        "source": {
+          "kind": "model",
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "replayState": {
+            "response": {
+              "kind": "deepseek-messages",
+              "version": 1,
+              "model": "deepseek-flash"
+            },
+            "blocks": [
+              {
+                "type": "reasoning",
+                "signature": "0e5caf31-ea10-4f1d-9c75-dae8263b9c87"
+              },
+              {
+                "type": "tool-call"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "tool/call",
+    "time": 1795421720678,
+    "data": {
+      "turn": 17,
+      "step": 16
+    }
+  },
+  {
+    "type": "job/registered",
+    "time": 1795421720686,
+    "data": {}
+  },
+  {
+    "type": "job/settled",
+    "time": 1795421720843,
+    "data": {}
+  },
+  {
+    "type": "tool/result",
+    "time": 1795421720843,
+    "data": {
+      "turn": 17,
+      "step": 16
+    }
+  },
+  {
+    "type": "step/end",
+    "time": 1795421720843,
+    "data": {
+      "turn": 17,
+      "step": 16
+    }
+  },
+  {
+    "type": "step/start",
+    "time": 1795421720863,
+    "data": {
+      "turn": 17,
+      "step": 17
+    }
+  },
+  {
+    "type": "session-log-deepseek/delivery-accepted",
+    "time": 1795421721264,
+    "data": {}
+  },
+  {
+    "type": "assistant/message",
+    "time": 1795421723407,
+    "data": {
+      "turn": 17,
+      "step": 17,
+      "usage": {
+        "inputTokens": 151,
+        "outputTokens": 318,
+        "cacheReadTokens": 245888,
+        "cacheWriteTokens": 0,
+        "totalTokens": 246357
+      },
+      "message": {
+        "id": "6348ef7e-9761-4726-85ac-4286cbb40a10",
+        "source": {
+          "kind": "model",
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "replayState": {
+            "response": {
+              "kind": "deepseek-messages",
+              "version": 1,
+              "model": "deepseek-flash"
+            },
+            "blocks": [
+              {
+                "type": "reasoning",
+                "signature": "ce3cfba0-76bc-4f8b-be36-9050045a9ab2"
+              },
+              {
+                "type": "tool-call"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "tool/call",
+    "time": 1795421723408,
+    "data": {
+      "turn": 17,
+      "step": 17
+    }
+  },
+  {
+    "type": "job/registered",
+    "time": 1795421723416,
+    "data": {}
+  },
+  {
+    "type": "job/settled",
+    "time": 1795421723440,
+    "data": {}
+  },
+  {
+    "type": "tool/result",
+    "time": 1795421723440,
+    "data": {
+      "turn": 17,
+      "step": 17
+    }
+  },
+  {
+    "type": "step/end",
+    "time": 1795421723441,
+    "data": {
+      "turn": 17,
+      "step": 17
+    }
+  },
+  {
+    "type": "step/start",
+    "time": 1795421723463,
+    "data": {
+      "turn": 17,
+      "step": 18
+    }
+  },
+  {
+    "type": "session-log-deepseek/delivery-accepted",
+    "time": 1795421723879,
+    "data": {}
+  },
+  {
+    "type": "assistant/message",
+    "time": 1795421725588,
+    "data": {
+      "turn": 17,
+      "step": 18,
+      "usage": {
+        "inputTokens": 251,
+        "outputTokens": 272,
+        "cacheReadTokens": 246272,
+        "cacheWriteTokens": 0,
+        "totalTokens": 246795
+      },
+      "message": {
+        "id": "de191265-e6eb-42c2-ac2c-a4e90d08fd6f",
+        "source": {
+          "kind": "model",
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "replayState": {
+            "response": {
+              "kind": "deepseek-messages",
+              "version": 1,
+              "model": "deepseek-flash"
+            },
+            "blocks": [
+              {
+                "type": "reasoning",
+                "signature": "01a288c5-8492-4a92-8841-895ec3b3d204"
+              },
+              {
+                "type": "tool-call"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "tool/call",
+    "time": 1795421725590,
+    "data": {
+      "turn": 17,
+      "step": 18
+    }
+  },
+  {
+    "type": "tool/result",
+    "time": 1795421725605,
+    "data": {
+      "turn": 17,
+      "step": 18
+    }
+  },
+  {
+    "type": "step/end",
+    "time": 1795421725605,
+    "data": {
+      "turn": 17,
+      "step": 18
+    }
+  },
+  {
+    "type": "step/start",
+    "time": 1795421725621,
+    "data": {
+      "turn": 17,
+      "step": 19
+    }
+  },
+  {
+    "type": "session-log-deepseek/delivery-accepted",
+    "time": 1795421725998,
+    "data": {}
+  },
+  {
+    "type": "assistant/message",
+    "time": 1795421727146,
+    "data": {
+      "turn": 17,
+      "step": 19,
+      "usage": {
+        "inputTokens": 180,
+        "outputTokens": 207,
+        "cacheReadTokens": 246656,
+        "cacheWriteTokens": 0,
+        "totalTokens": 247043
+      },
+      "message": {
+        "id": "899df4f3-757d-4674-8676-6eba3134f40a",
+        "source": {
+          "kind": "model",
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "replayState": {
+            "response": {
+              "kind": "deepseek-messages",
+              "version": 1,
+              "model": "deepseek-flash"
+            },
+            "blocks": [
+              {
+                "type": "reasoning",
+                "signature": "e7a0c6e5-9d17-4dac-a341-dfd65d57db28"
+              },
+              {
+                "type": "tool-call"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "tool/call",
+    "time": 1795421727147,
+    "data": {
+      "turn": 17,
+      "step": 19
+    }
+  },
+  {
+    "type": "tool/result",
+    "time": 1795421727162,
+    "data": {
+      "turn": 17,
+      "step": 19
+    }
+  },
+  {
+    "type": "step/end",
+    "time": 1795421727162,
+    "data": {
+      "turn": 17,
+      "step": 19
+    }
+  },
+  {
+    "type": "step/start",
+    "time": 1795421727183,
+    "data": {
+      "turn": 17,
+      "step": 20
+    }
+  },
+  {
+    "type": "session-log-deepseek/delivery-accepted",
+    "time": 1795421727824,
+    "data": {}
+  },
+  {
+    "type": "assistant/message",
+    "time": 1795421728671,
+    "data": {
+      "turn": 17,
+      "step": 20,
+      "usage": {
+        "inputTokens": 172,
+        "outputTokens": 121,
+        "cacheReadTokens": 246912,
+        "cacheWriteTokens": 0,
+        "totalTokens": 247205
+      },
+      "message": {
+        "id": "c635303c-b67c-40df-a3c1-e87d8d261b9d",
+        "source": {
+          "kind": "model",
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "replayState": {
+            "response": {
+              "kind": "deepseek-messages",
+              "version": 1,
+              "model": "deepseek-flash"
+            },
+            "blocks": [
+              {
+                "type": "reasoning",
+                "signature": "85a9cf14-d883-42fb-8078-1ba9081026af"
+              },
+              {
+                "type": "tool-call"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "tool/call",
+    "time": 1795421728672,
+    "data": {
+      "turn": 17,
+      "step": 20
+    }
+  },
+  {
+    "type": "job/registered",
+    "time": 1795421728680,
+    "data": {}
+  },
+  {
+    "type": "job/settled",
+    "time": 1795421728941,
+    "data": {}
+  },
+  {
+    "type": "tool/result",
+    "time": 1795421728942,
+    "data": {
+      "turn": 17,
+      "step": 20
+    }
+  },
+  {
+    "type": "step/end",
+    "time": 1795421728942,
+    "data": {
+      "turn": 17,
+      "step": 20
+    }
+  },
+  {
+    "type": "step/start",
+    "time": 1795421728960,
+    "data": {
+      "turn": 17,
+      "step": 21
+    }
+  },
+  {
+    "type": "session-log-deepseek/delivery-accepted",
+    "time": 1795421729187,
+    "data": {}
+  },
+  {
+    "type": "assistant/message",
+    "time": 1795421730462,
+    "data": {
+      "turn": 17,
+      "step": 21,
+      "usage": {
+        "inputTokens": 211,
+        "outputTokens": 237,
+        "cacheReadTokens": 247040,
+        "cacheWriteTokens": 0,
+        "totalTokens": 247488
+      },
+      "message": {
+        "id": "3e30283b-a4db-43ea-9bc6-30fc6827288a",
+        "source": {
+          "kind": "model",
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "replayState": {
+            "response": {
+              "kind": "deepseek-messages",
+              "version": 1,
+              "model": "deepseek-flash"
+            },
+            "blocks": [
+              {
+                "type": "reasoning",
+                "signature": "64dedd5c-14d5-4ed9-bfed-99dae1f9975a"
+              },
+              {
+                "type": "tool-call"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "tool/call",
+    "time": 1795421730463,
+    "data": {
+      "turn": 17,
+      "step": 21
+    }
+  },
+  {
+    "type": "job/registered",
+    "time": 1795421730470,
+    "data": {}
+  },
+  {
+    "type": "job/settled",
+    "time": 1795421730492,
+    "data": {}
+  },
+  {
+    "type": "tool/result",
+    "time": 1795421730493,
+    "data": {
+      "turn": 17,
+      "step": 21
+    }
+  },
+  {
+    "type": "step/end",
+    "time": 1795421730493,
+    "data": {
+      "turn": 17,
+      "step": 21
+    }
+  },
+  {
+    "type": "step/start",
+    "time": 1795421730511,
+    "data": {
+      "turn": 17,
+      "step": 22
+    }
+  },
+  {
+    "type": "session-log-deepseek/delivery-accepted",
+    "time": 1795421730888,
+    "data": {}
+  },
+  {
+    "type": "assistant/message",
+    "time": 1795421733084,
+    "data": {
+      "turn": 17,
+      "step": 22,
+      "usage": {
+        "inputTokens": 140,
+        "outputTokens": 276,
+        "cacheReadTokens": 247424,
+        "cacheWriteTokens": 0,
+        "totalTokens": 247840
+      },
+      "message": {
+        "id": "42d8303e-72f3-45ef-81b0-efa83f5d2d0e",
+        "source": {
+          "kind": "model",
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "replayState": {
+            "response": {
+              "kind": "deepseek-messages",
+              "version": 1,
+              "model": "deepseek-flash"
+            },
+            "blocks": [
+              {
+                "type": "reasoning",
+                "signature": "586ea579-61bf-494b-9ab6-86c2990a434a"
+              },
+              {
+                "type": "tool-call"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "tool/call",
+    "time": 1795421733085,
+    "data": {
+      "turn": 17,
+      "step": 22
+    }
+  },
+  {
+    "type": "job/registered",
+    "time": 1795421733093,
+    "data": {}
+  },
+  {
+    "type": "job/settled",
+    "time": 1795421733117,
+    "data": {}
+  },
+  {
+    "type": "tool/result",
+    "time": 1795421733118,
+    "data": {
+      "turn": 17,
+      "step": 22
+    }
+  },
+  {
+    "type": "step/end",
+    "time": 1795421733118,
+    "data": {
+      "turn": 17,
+      "step": 22
+    }
+  },
+  {
+    "type": "step/start",
+    "time": 1795421733135,
+    "data": {
+      "turn": 17,
+      "step": 23
+    }
+  },
+  {
+    "type": "session-log-deepseek/delivery-accepted",
+    "time": 1795421733547,
+    "data": {}
+  },
+  {
+    "type": "assistant/message",
+    "time": 1795421736792,
+    "data": {
+      "turn": 17,
+      "step": 23,
+      "usage": {
+        "inputTokens": 174,
+        "outputTokens": 525,
+        "cacheReadTokens": 247808,
+        "cacheWriteTokens": 0,
+        "totalTokens": 248507
+      },
+      "message": {
+        "id": "d4795da9-7aba-45f2-9436-ec611e2bf18f",
+        "source": {
+          "kind": "model",
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "replayState": {
+            "response": {
+              "kind": "deepseek-messages",
+              "version": 1,
+              "model": "deepseek-flash"
+            },
+            "blocks": [
+              {
+                "type": "reasoning",
+                "signature": "f5f45489-1620-4564-849f-f13657f6a266"
+              },
+              {
+                "type": "tool-call"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "tool/call",
+    "time": 1795421736794,
+    "data": {
+      "turn": 17,
+      "step": 23
+    }
+  },
+  {
+    "type": "tool/result",
+    "time": 1795421736812,
+    "data": {
+      "turn": 17,
+      "step": 23
+    }
+  },
+  {
+    "type": "step/end",
+    "time": 1795421736813,
+    "data": {
+      "turn": 17,
+      "step": 23
+    }
+  },
+  {
+    "type": "step/start",
+    "time": 1795421736834,
+    "data": {
+      "turn": 17,
+      "step": 24
+    }
+  },
+  {
+    "type": "session-log-deepseek/delivery-accepted",
+    "time": 1795421737072,
+    "data": {}
+  },
+  {
+    "type": "assistant/message",
+    "time": 1795421738158,
+    "data": {
+      "turn": 17,
+      "step": 24,
+      "usage": {
+        "inputTokens": 228,
+        "outputTokens": 270,
+        "cacheReadTokens": 248320,
+        "cacheWriteTokens": 0,
+        "totalTokens": 248818
+      },
+      "message": {
+        "id": "e234a305-47d8-432e-af52-7314c6358a61",
+        "source": {
+          "kind": "model",
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "replayState": {
+            "response": {
+              "kind": "deepseek-messages",
+              "version": 1,
+              "model": "deepseek-flash"
+            },
+            "blocks": [
+              {
+                "type": "reasoning",
+                "signature": "d1434131-51ac-44c5-9f5c-6fc53bd52ef3"
+              },
+              {
+                "type": "tool-call"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "tool/call",
+    "time": 1795421738159,
+    "data": {
+      "turn": 17,
+      "step": 24
+    }
+  },
+  {
+    "type": "tool/result",
+    "time": 1795421738171,
+    "data": {
+      "turn": 17,
+      "step": 24
+    }
+  },
+  {
+    "type": "step/end",
+    "time": 1795421738172,
+    "data": {
+      "turn": 17,
+      "step": 24
+    }
+  },
+  {
+    "type": "step/start",
+    "time": 1795421738187,
+    "data": {
+      "turn": 17,
+      "step": 25
+    }
+  },
+  {
+    "type": "session-log-deepseek/delivery-accepted",
+    "time": 1795421738606,
+    "data": {}
+  },
+  {
+    "type": "assistant/message",
+    "time": 1795421740363,
+    "data": {
+      "turn": 17,
+      "step": 25,
+      "usage": {
+        "inputTokens": 160,
+        "outputTokens": 344,
+        "cacheReadTokens": 248704,
+        "cacheWriteTokens": 0,
+        "totalTokens": 249208
+      },
+      "message": {
+        "id": "25944e73-a8eb-4298-910b-7f97ea604fc5",
+        "source": {
+          "kind": "model",
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "replayState": {
+            "response": {
+              "kind": "deepseek-messages",
+              "version": 1,
+              "model": "deepseek-flash"
+            },
+            "blocks": [
+              {
+                "type": "reasoning",
+                "signature": "1110692d-ca63-41db-b77b-422a7f976a24"
+              },
+              {
+                "type": "tool-call"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "tool/call",
+    "time": 1795421740364,
+    "data": {
+      "turn": 17,
+      "step": 25
+    }
+  },
+  {
+    "type": "tool/result",
+    "time": 1795421740381,
+    "data": {
+      "turn": 17,
+      "step": 25
+    }
+  },
+  {
+    "type": "step/end",
+    "time": 1795421740381,
+    "data": {
+      "turn": 17,
+      "step": 25
+    }
+  },
+  {
+    "type": "step/start",
+    "time": 1795421740400,
+    "data": {
+      "turn": 17,
+      "step": 26
+    }
+  },
+  {
+    "type": "session-log-deepseek/delivery-accepted",
+    "time": 1795421740779,
+    "data": {}
+  },
+  {
+    "type": "assistant/message",
+    "time": 1795421741531,
+    "data": {
+      "turn": 17,
+      "step": 26,
+      "usage": {
+        "inputTokens": 157,
+        "outputTokens": 137,
+        "cacheReadTokens": 249088,
+        "cacheWriteTokens": 0,
+        "totalTokens": 249382
+      },
+      "message": {
+        "id": "77349c6b-8f50-4680-b9cd-58ab8a52fa9e",
+        "source": {
+          "kind": "model",
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "replayState": {
+            "response": {
+              "kind": "deepseek-messages",
+              "version": 1,
+              "model": "deepseek-flash"
+            },
+            "blocks": [
+              {
+                "type": "reasoning",
+                "signature": "286d184f-6cd0-4edf-b954-fafadbbe0f43"
+              },
+              {
+                "type": "tool-call"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "tool/call",
+    "time": 1795421741533,
+    "data": {
+      "turn": 17,
+      "step": 26
+    }
+  },
+  {
+    "type": "job/registered",
+    "time": 1795421741548,
+    "data": {}
+  },
+  {
+    "type": "job/settled",
+    "time": 1795421741967,
+    "data": {}
+  },
+  {
+    "type": "tool/result",
+    "time": 1795421741968,
+    "data": {
+      "turn": 17,
+      "step": 26
+    }
+  },
+  {
+    "type": "step/end",
+    "time": 1795421741968,
+    "data": {
+      "turn": 17,
+      "step": 26
+    }
+  },
+  {
+    "type": "step/start",
+    "time": 1795421741988,
+    "data": {
+      "turn": 17,
+      "step": 27
+    }
+  },
+  {
+    "type": "session-log-deepseek/delivery-accepted",
+    "time": 1795421742637,
+    "data": {}
+  },
+  {
+    "type": "assistant/message",
+    "time": 1795421747433,
+    "data": {
+      "turn": 17,
+      "step": 27,
+      "usage": {
+        "inputTokens": 206,
+        "outputTokens": 976,
+        "cacheReadTokens": 249216,
+        "cacheWriteTokens": 0,
+        "totalTokens": 250398
+      },
+      "message": {
+        "id": "08612053-d914-4a88-871f-376436d8ffc4",
+        "source": {
+          "kind": "model",
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "replayState": {
+            "response": {
+              "kind": "deepseek-messages",
+              "version": 1,
+              "model": "deepseek-flash"
+            },
+            "blocks": [
+              {
+                "type": "reasoning",
+                "signature": "4feedf32-9bf6-4f0e-88cd-6bda487d30d9"
+              },
+              {
+                "type": "text"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "step/end",
+    "time": 1795421747434,
+    "data": {
+      "turn": 17,
+      "step": 27
+    }
+  },
+  {
+    "type": "workspace/changes",
+    "time": 1795421747525,
+    "data": {
+      "turn": 17
+    }
+  },
+  {
+    "type": "turn/end",
+    "time": 1795421747526,
+    "data": {
+      "turn": 17
+    }
+  },
+  {
+    "type": "agent/inbox/spliced",
+    "time": 1795421747534,
+    "data": {}
+  },
+  {
+    "type": "turn/start",
+    "time": 1795421747536,
+    "data": {
+      "turn": 18
+    }
+  },
+  {
+    "type": "agent/inbox/spliced",
+    "time": 1795421747536,
+    "data": {}
+  },
+  {
+    "type": "step/start",
+    "time": 1795421747559,
+    "data": {
+      "turn": 18,
+      "step": 1
+    }
+  },
+  {
+    "type": "user/message",
+    "time": 1795421747561,
+    "data": {
+      "content": [
+        {
+          "type": "text",
+          "text": "用真实的日志跑一遍折叠"
+        }
+      ]
+    }
+  },
+  {
+    "type": "request/header",
+    "time": 1795421747562,
+    "data": {}
+  },
+  {
+    "type": "session-log-deepseek/delivery-accepted",
+    "time": 1795421748046,
+    "data": {}
+  },
+  {
+    "type": "assistant/message",
+    "time": 1795421751855,
+    "data": {
+      "turn": 18,
+      "step": 1,
+      "usage": {
+        "inputTokens": 155,
+        "outputTokens": 732,
+        "cacheReadTokens": 250368,
+        "cacheWriteTokens": 0,
+        "totalTokens": 251255
+      },
+      "message": {
+        "id": "128e6dc8-14e8-4a78-b8ff-ded079fe20f9",
+        "source": {
+          "kind": "model",
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "replayState": {
+            "response": {
+              "kind": "deepseek-messages",
+              "version": 1,
+              "model": "deepseek-flash"
+            },
+            "blocks": [
+              {
+                "type": "reasoning",
+                "signature": "f614f515-8d0e-437e-abda-afdc2ebd9c8a"
+              },
+              {
+                "type": "tool-call"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "tool/call",
+    "time": 1795421751856,
+    "data": {
+      "turn": 18,
+      "step": 1
+    }
+  },
+  {
+    "type": "tool/result",
+    "time": 1795421751867,
+    "data": {
+      "turn": 18,
+      "step": 1
+    }
+  },
+  {
+    "type": "step/end",
+    "time": 1795421751867,
+    "data": {
+      "turn": 18,
+      "step": 1
+    }
+  },
+  {
+    "type": "step/start",
+    "time": 1795421751882,
+    "data": {
+      "turn": 18,
+      "step": 2
+    }
+  },
+  {
+    "type": "session-log-deepseek/delivery-accepted",
+    "time": 1795421752348,
+    "data": {}
+  },
+  {
+    "type": "assistant/message",
+    "time": 1795421753149,
+    "data": {
+      "turn": 18,
+      "step": 2,
+      "usage": {
+        "inputTokens": 171,
+        "outputTokens": 110,
+        "cacheReadTokens": 251136,
+        "cacheWriteTokens": 0,
+        "totalTokens": 251417
+      },
+      "message": {
+        "id": "ad7506b2-f2d8-4ef8-b847-c98d25a635ae",
+        "source": {
+          "kind": "model",
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "replayState": {
+            "response": {
+              "kind": "deepseek-messages",
+              "version": 1,
+              "model": "deepseek-flash"
+            },
+            "blocks": [
+              {
+                "type": "reasoning",
+                "signature": "b51ecc1a-1acd-4f43-96ff-d425faa346e4"
+              },
+              {
+                "type": "tool-call"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "tool/call",
+    "time": 1795421753150,
+    "data": {
+      "turn": 18,
+      "step": 2
+    }
+  },
+  {
+    "type": "job/registered",
+    "time": 1795421753156,
+    "data": {}
+  },
+  {
+    "type": "job/settled",
+    "time": 1795421753318,
+    "data": {}
+  },
+  {
+    "type": "tool/result",
+    "time": 1795421753319,
+    "data": {
+      "turn": 18,
+      "step": 2
+    }
+  },
+  {
+    "type": "step/end",
+    "time": 1795421753319,
+    "data": {
+      "turn": 18,
+      "step": 2
+    }
+  },
+  {
+    "type": "step/start",
+    "time": 1795421753329,
+    "data": {
+      "turn": 18,
+      "step": 3
+    }
+  },
+  {
+    "type": "session-log-deepseek/delivery-accepted",
+    "time": 1795421753810,
+    "data": {}
+  },
+  {
+    "type": "assistant/message",
+    "time": 1795421757517,
+    "data": {
+      "turn": 18,
+      "step": 3,
+      "usage": {
+        "inputTokens": 3655,
+        "outputTokens": 705,
+        "cacheReadTokens": 251392,
+        "cacheWriteTokens": 0,
+        "totalTokens": 255752
+      },
+      "message": {
+        "id": "0e449379-fa52-4a66-b775-23badf5e1c46",
+        "source": {
+          "kind": "model",
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "replayState": {
+            "response": {
+              "kind": "deepseek-messages",
+              "version": 1,
+              "model": "deepseek-flash"
+            },
+            "blocks": [
+              {
+                "type": "reasoning",
+                "signature": "5dbdb5be-b828-491f-8b3d-6128d1548ea1"
+              },
+              {
+                "type": "tool-call"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "tool/call",
+    "time": 1795421757518,
+    "data": {
+      "turn": 18,
+      "step": 3
+    }
+  },
+  {
+    "type": "tool/result",
+    "time": 1795421757534,
+    "data": {
+      "turn": 18,
+      "step": 3
+    }
+  },
+  {
+    "type": "step/end",
+    "time": 1795421757534,
+    "data": {
+      "turn": 18,
+      "step": 3
+    }
+  },
+  {
+    "type": "step/start",
+    "time": 1795421757554,
+    "data": {
+      "turn": 18,
+      "step": 4
+    }
+  },
+  {
+    "type": "session-log-deepseek/delivery-accepted",
+    "time": 1795421757978,
+    "data": {}
+  },
+  {
+    "type": "assistant/message",
+    "time": 1795421759004,
+    "data": {
+      "turn": 18,
+      "step": 4,
+      "usage": {
+        "inputTokens": 188,
+        "outputTokens": 110,
+        "cacheReadTokens": 255616,
+        "cacheWriteTokens": 0,
+        "totalTokens": 255914
+      },
+      "message": {
+        "id": "1fffcfb0-7139-4d8e-91ae-abc063eec2d1",
+        "source": {
+          "kind": "model",
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "replayState": {
+            "response": {
+              "kind": "deepseek-messages",
+              "version": 1,
+              "model": "deepseek-flash"
+            },
+            "blocks": [
+              {
+                "type": "reasoning",
+                "signature": "993ca62d-d6a8-4f6e-b901-34a484b28881"
+              },
+              {
+                "type": "tool-call"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "tool/call",
+    "time": 1795421759005,
+    "data": {
+      "turn": 18,
+      "step": 4
+    }
+  },
+  {
+    "type": "job/registered",
+    "time": 1795421759014,
+    "data": {}
+  },
+  {
+    "type": "job/settled",
+    "time": 1795421759165,
+    "data": {}
+  },
+  {
+    "type": "tool/result",
+    "time": 1795421759166,
+    "data": {
+      "turn": 18,
+      "step": 4
+    }
+  },
+  {
+    "type": "step/end",
+    "time": 1795421759166,
+    "data": {
+      "turn": 18,
+      "step": 4
+    }
+  },
+  {
+    "type": "step/start",
+    "time": 1795421759184,
+    "data": {
+      "turn": 18,
+      "step": 5
+    }
+  },
+  {
+    "type": "session-log-deepseek/delivery-accepted",
+    "time": 1795421759542,
+    "data": {}
+  },
+  {
+    "type": "assistant/message",
+    "time": 1795421763087,
+    "data": {
+      "turn": 18,
+      "step": 5,
+      "usage": {
+        "inputTokens": 3318,
+        "outputTokens": 606,
+        "cacheReadTokens": 255872,
+        "cacheWriteTokens": 0,
+        "totalTokens": 259796
+      },
+      "message": {
+        "id": "3936b2e1-14c3-458c-8fbb-022fac3c01d8",
+        "source": {
+          "kind": "model",
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "replayState": {
+            "response": {
+              "kind": "deepseek-messages",
+              "version": 1,
+              "model": "deepseek-flash"
+            },
+            "blocks": [
+              {
+                "type": "reasoning",
+                "signature": "a9aca4ec-59a2-4505-9625-2b8519d3f6bb"
+              },
+              {
+                "type": "tool-call"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "tool/call",
+    "time": 1795421763088,
+    "data": {
+      "turn": 18,
+      "step": 5
+    }
+  },
+  {
+    "type": "job/registered",
+    "time": 1795421763098,
+    "data": {}
+  },
+  {
+    "type": "job/settled",
+    "time": 1795421763132,
+    "data": {}
+  },
+  {
+    "type": "tool/result",
+    "time": 1795421763132,
+    "data": {
+      "turn": 18,
+      "step": 5
+    }
+  },
+  {
+    "type": "step/end",
+    "time": 1795421763133,
+    "data": {
+      "turn": 18,
+      "step": 5
+    }
+  },
+  {
+    "type": "step/start",
+    "time": 1795421763149,
+    "data": {
+      "turn": 18,
+      "step": 6
+    }
+  },
+  {
+    "type": "session-log-deepseek/delivery-accepted",
+    "time": 1795421763838,
+    "data": {}
+  },
+  {
+    "type": "assistant/message",
+    "time": 1795421766075,
+    "data": {
+      "turn": 18,
+      "step": 6,
+      "usage": {
+        "inputTokens": 149,
+        "outputTokens": 400,
+        "cacheReadTokens": 259712,
+        "cacheWriteTokens": 0,
+        "totalTokens": 260261
+      },
+      "message": {
+        "id": "8608b5cb-88f5-4138-8d3a-62a3b517a8eb",
+        "source": {
+          "kind": "model",
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "replayState": {
+            "response": {
+              "kind": "deepseek-messages",
+              "version": 1,
+              "model": "deepseek-flash"
+            },
+            "blocks": [
+              {
+                "type": "reasoning",
+                "signature": "b2518ce8-6c4c-4317-a304-5b54c3a1edfb"
+              },
+              {
+                "type": "tool-call"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "tool/call",
+    "time": 1795421766076,
+    "data": {
+      "turn": 18,
+      "step": 6
+    }
+  },
+  {
+    "type": "job/registered",
+    "time": 1795421766084,
+    "data": {}
+  },
+  {
+    "type": "job/settled",
+    "time": 1795421766160,
+    "data": {}
+  },
+  {
+    "type": "tool/result",
+    "time": 1795421766161,
+    "data": {
+      "turn": 18,
+      "step": 6
+    }
+  },
+  {
+    "type": "step/end",
+    "time": 1795421766161,
+    "data": {
+      "turn": 18,
+      "step": 6
+    }
+  },
+  {
+    "type": "step/start",
+    "time": 1795421766179,
+    "data": {
+      "turn": 18,
+      "step": 7
+    }
+  },
+  {
+    "type": "session-log-deepseek/delivery-accepted",
+    "time": 1795421766686,
+    "data": {}
+  },
+  {
+    "type": "assistant/message",
+    "time": 1795421777678,
+    "data": {
+      "turn": 18,
+      "step": 7,
+      "usage": {
+        "inputTokens": 138,
+        "outputTokens": 2010,
+        "cacheReadTokens": 260224,
+        "cacheWriteTokens": 0,
+        "totalTokens": 262372
+      },
+      "message": {
+        "id": "f3968565-7ddd-4c17-9c9b-e237da94e63c",
+        "source": {
+          "kind": "model",
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "replayState": {
+            "response": {
+              "kind": "deepseek-messages",
+              "version": 1,
+              "model": "deepseek-flash"
+            },
+            "blocks": [
+              {
+                "type": "reasoning",
+                "signature": "dd6b9a7a-4636-4b6b-9103-a1131b3d925d"
+              },
+              {
+                "type": "tool-call"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "tool/call",
+    "time": 1795421777679,
+    "data": {
+      "turn": 18,
+      "step": 7
+    }
+  },
+  {
+    "type": "job/registered",
+    "time": 1795421777689,
+    "data": {}
+  },
+  {
+    "type": "job/settled",
+    "time": 1795421777729,
+    "data": {}
+  },
+  {
+    "type": "tool/result",
+    "time": 1795421777729,
+    "data": {
+      "turn": 18,
+      "step": 7
+    }
+  },
+  {
+    "type": "step/end",
+    "time": 1795421777730,
+    "data": {
+      "turn": 18,
+      "step": 7
+    }
+  },
+  {
+    "type": "step/start",
+    "time": 1795421777750,
+    "data": {
+      "turn": 18,
+      "step": 8
+    }
+  },
+  {
+    "type": "session-log-deepseek/delivery-accepted",
+    "time": 1795421778080,
+    "data": {}
+  },
+  {
+    "type": "assistant/message",
+    "time": 1795421782029,
+    "data": {
+      "turn": 18,
+      "step": 8,
+      "usage": {
+        "inputTokens": 157,
+        "outputTokens": 699,
+        "cacheReadTokens": 262272,
+        "cacheWriteTokens": 0,
+        "totalTokens": 263128
+      },
+      "message": {
+        "id": "a1459232-e301-4376-967d-2353308c1e7a",
+        "source": {
+          "kind": "model",
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "replayState": {
+            "response": {
+              "kind": "deepseek-messages",
+              "version": 1,
+              "model": "deepseek-flash"
+            },
+            "blocks": [
+              {
+                "type": "reasoning",
+                "signature": "301bd2ed-73ed-47ff-90a2-fdb08471c1bf"
+              },
+              {
+                "type": "tool-call"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "tool/call",
+    "time": 1795421782030,
+    "data": {
+      "turn": 18,
+      "step": 8
+    }
+  },
+  {
+    "type": "tool/result",
+    "time": 1795421782048,
+    "data": {
+      "turn": 18,
+      "step": 8
+    }
+  },
+  {
+    "type": "step/end",
+    "time": 1795421782049,
+    "data": {
+      "turn": 18,
+      "step": 8
+    }
+  },
+  {
+    "type": "step/start",
+    "time": 1795421782066,
+    "data": {
+      "turn": 18,
+      "step": 9
+    }
+  },
+  {
+    "type": "session-log-deepseek/delivery-accepted",
+    "time": 1795421782436,
+    "data": {}
+  },
+  {
+    "type": "assistant/message",
+    "time": 1795421788406,
+    "data": {
+      "turn": 18,
+      "step": 9,
+      "usage": {
+        "inputTokens": 253,
+        "outputTokens": 1075,
+        "cacheReadTokens": 262912,
+        "cacheWriteTokens": 0,
+        "totalTokens": 264240
+      },
+      "message": {
+        "id": "4b08b4de-fc1a-4ee2-a514-4513faacec2d",
+        "source": {
+          "kind": "model",
+          "provider": "deepseek-account",
+          "model": "deepseek-flash",
+          "replayState": {
+            "response": {
+              "kind": "deepseek-messages",
+              "version": 1,
+              "model": "deepseek-flash"
+            },
+            "blocks": [
+              {
+                "type": "reasoning",
+                "signature": "24473813-40f4-4137-92f3-bd2c5b7451eb"
+              },
+              {
+                "type": "text"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "type": "step/end",
+    "time": 1795421788407,
+    "data": {
+      "turn": 18,
+      "step": 9
+    }
+  },
+  {
+    "type": "workspace/changes",
+    "time": 1795421788492,
+    "data": {
+      "turn": 18
+    }
+  },
+  {
+    "type": "turn/end",
+    "time": 1795421788493,
+    "data": {
+      "turn": 18
+    }
+  },
+  {
+    "type": "agent/inbox/spliced",
+    "time": 1795421788503,
+    "data": {}
+  }
+]
