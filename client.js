@@ -471,10 +471,11 @@ window.__ModuleLoader__.load({
 
   /** Inline pill text: `≈¥0.021 · 12.4K tokens`, or a state word. */
   function inlineText(cost) {
-    if (!cost || cost.state === 'pending') return '¥…'
-    if (cost.state === 'no-data') return '无数据'
-    if (cost.state === 'unpriced') return '未定价'
-    return '≈' + formatMoney(cost.amount) + ' · ' + formatCompactTokens(cost.tokens)
+    if (!cost || cost.state === 'pending') return '花费 …'
+    if (cost.state === 'no-data') return '花费 无数据'
+    if (cost.state === 'unpriced') return '花费 未定价'
+    // Only money: the row already shows the turn's token count.
+    return '花费 ≈' + formatMoney(cost.amount)
   }
 
   /**
@@ -1137,7 +1138,7 @@ window.__ModuleLoader__.load({
     '.uc-btn:hover{background:var(--dsw-alias-bg-layer-2);color:var(--dsw-alias-label-primary)}',
     // Sits inside the Turn action row beside the icon buttons: borderless,
     // never stretched, and digits aligned so the amount does not jitter.
-    '.uc-inline{display:inline-flex;align-items:center;flex:0 0 auto;height:22px;padding:0 6px;border:0;border-radius:6px;background:transparent;color:var(--dsw-alias-label-secondary);font:inherit;font-size:12px;line-height:1;white-space:nowrap;font-variant-numeric:tabular-nums;cursor:pointer}',
+    '.uc-inline{display:inline-flex;align-items:baseline;gap:2px;padding:0;border:0;background:none;color:var(--dsw-alias-label-secondary);font:inherit;font-size:12px;line-height:inherit;white-space:nowrap;font-variant-numeric:tabular-nums;cursor:pointer;}',
     '.uc-head-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;justify-content:space-between}',
     '.uc-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}',
     '.uc-section{margin:0 0 16px;padding:16px;border:1px solid var(--dsw-alias-border-l1);border-radius:12px;background:var(--dsw-alias-bg-layer-1)}',
@@ -1152,7 +1153,7 @@ window.__ModuleLoader__.load({
     '.uc-banner{display:flex;align-items:center;gap:12px;justify-content:space-between;padding:10px 12px;margin-bottom:12px;border:1px solid var(--dsw-alias-state-warn-primary);border-radius:10px;font-size:13px}',
     '.uc-progress{height:6px;margin:10px 0 6px;border-radius:999px;background:var(--dsw-alias-bg-layer-2);overflow:hidden}',
     '.uc-progress-bar{height:100%;background:var(--dsw-alias-brand-primary)}',
-    '.uc-inline:hover{background:var(--dsw-alias-bg-layer-2);color:var(--dsw-alias-label-primary)}',
+    '.uc-inline:hover{color:var(--dsw-alias-label-primary);text-decoration:underline;text-underline-offset:2px;}',
     '.uc-focus{display:flex;align-items:center;gap:12px;justify-content:space-between;padding:8px 12px;margin-bottom:12px;border:1px solid var(--dsw-alias-brand-primary);border-radius:10px;font-size:13px}',
     '.uc-row-focus{background:var(--dsw-alias-bg-layer-2)}',
   ].join('')

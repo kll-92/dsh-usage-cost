@@ -214,7 +214,7 @@ test('panel and inline build a tree without throwing', () => {
   assert.equal(panel.type, 'section')
   const inline = ui.Inline({ sessionId: 's1', messageId: 'm1' })
   assert.equal(inline.type, 'button')
-  assert.deepEqual(inline.children, ['¥…'])
+  assert.deepEqual(inline.children, ['花费 …'])
   ledger.dispose()
 })
 
@@ -295,7 +295,7 @@ test('panel renders with real ledger rows without falling into the error page', 
   const panel = ui.Panel()
   assert.equal(panel.type, 'section')
   const inline = ui.Inline({ sessionId: 's1', messageId: 'm1' })
-  assert.deepEqual(inline.children, ['≈¥' + (0.006).toFixed(4) + ' · 1.5K tokens'])
+  assert.deepEqual(inline.children, ['花费 ≈¥' + (0.006).toFixed(4)])
   ledger.dispose()
 })
 

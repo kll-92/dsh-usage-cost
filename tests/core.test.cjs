@@ -203,10 +203,10 @@ test('format: compact tokens switch to K and M with one decimal', () => {
 })
 
 test('inline: priced text carries the estimate marker, states stay words', () => {
-  assert.equal(core.inlineText({ state: 'priced', amount: 0.021, tokens: 12400 }), '≈¥0.0210 · 12.4K tokens')
-  assert.equal(core.inlineText({ state: 'unpriced' }), '未定价')
-  assert.equal(core.inlineText({ state: 'no-data' }), '无数据')
-  assert.equal(core.inlineText({ state: 'pending' }), '¥…')
+  assert.equal(core.inlineText({ state: 'priced', amount: 0.021, tokens: 12400 }), '花费 ≈¥0.0210')
+  assert.equal(core.inlineText({ state: 'unpriced' }), '花费 未定价')
+  assert.equal(core.inlineText({ state: 'no-data' }), '花费 无数据')
+  assert.equal(core.inlineText({ state: 'pending' }), '花费 …')
 })
 
 test('budget: threshold, over-budget and unset states', () => {

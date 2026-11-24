@@ -467,10 +467,11 @@
 
   /** Inline pill text: `≈¥0.021 · 12.4K tokens`, or a state word. */
   function inlineText(cost) {
-    if (!cost || cost.state === 'pending') return '¥…'
-    if (cost.state === 'no-data') return '无数据'
-    if (cost.state === 'unpriced') return '未定价'
-    return '≈' + formatMoney(cost.amount) + ' · ' + formatCompactTokens(cost.tokens)
+    if (!cost || cost.state === 'pending') return '花费 …'
+    if (cost.state === 'no-data') return '花费 无数据'
+    if (cost.state === 'unpriced') return '花费 未定价'
+    // Only money: the row already shows the turn's token count.
+    return '花费 ≈' + formatMoney(cost.amount)
   }
 
   /**

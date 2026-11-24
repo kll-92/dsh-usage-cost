@@ -27,7 +27,7 @@ test('real session: every completed Turn folds with a message id and a price', (
     const cost = core.turnCost(row.usage, row.usage.routes, row.endedAt, core.DEFAULT_PRICES)
     assert.equal(cost.state, 'priced', 'Turn ' + row.turn + ' prices')
     assert.ok(cost.amount > 0)
-    assert.match(core.inlineText(cost), /^≈¥/)
+    assert.match(core.inlineText(cost), /^花费 ≈¥/)
   }
 })
 
