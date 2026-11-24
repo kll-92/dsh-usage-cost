@@ -300,6 +300,19 @@
     }
 
     var balanceReader = null
+    var titleResolver = null
+
+    /** Install the session-title lookup (display title, host-projected). */
+    function setTitleResolver(resolver) { titleResolver = resolver }
+
+    /** Human label for one session, falling back to a short id. */
+    function titleOf(sessionId) {
+      try {
+        var title = typeof titleResolver === 'function' ? titleResolver(sessionId) : undefined
+        if (typeof title === 'string' && title !== '') return title
+      } catch (error) { /* fall through */ }
+      return String(sessionId || '').slice(-8) || '未知会话'
+    }
 
     /** Install the account-balance reader provided by the plugin half. */
     function setBalanceReader(reader) { balanceReader = reader }
@@ -463,6 +476,8 @@
       noteInline: noteInline,
       setDiag: setDiag,
       setBalanceReader: setBalanceReader,
+      setTitleResolver: setTitleResolver,
+      titleOf: titleOf,
       refreshBalance: refreshBalance,
       dismissNotice: dismissNotice,
       dispose: dispose,
@@ -554,7 +569,8 @@
         return h('div', { className: 'uc-empty uc-warn' }, '用量面板渲染出错：' + String((error && error.message) || error))
       }
     }
-    var VIEWS = [['today', '今日'], ['month', '本月'], ['year', '本年'], ['all', '全部']]
+    var VIEWS = [['today', '今日'], ['week', '本周'], ['month', '本月'], ['year', '本年'], ['all', '全部']]
+    var MODES = [['rows', '明细'], ['sessions', '按会话']]
 
     function useSnapshot() { return useLedger(React, ledger) }
 
@@ -565,6 +581,9 @@
       var viewPair = React.useState('today')
       var view = viewPair[0]
       var setView = viewPair[1]
+      var modePair = React.useState('rows')
+      var mode = modePair[0]
+      var setMode = modePair[1]
       var sectionPair = React.useState(null)
       var section = sectionPair[0]
       var setSection = sectionPair[1]
@@ -778,6 +797,23 @@
         body = h('div', { className: 'uc-empty' }, '正在读取会话记录 ' + snap.progress.done + '/' + snap.progress.total + ' …')
       } else if (snap.status === 'error') {
         body = h('div', { className: 'uc-empty uc-warn' }, '读取失败：' + snap.error)
+      } else if (mode === 'sessions') {
+        var perSession = core.bySession(rows)
+        body = perSession.length === 0
+          ? h('div', { className: 'uc-empty' }, '这个范围内还没有会话。')
+          : h('table', { className: 'uc-table' },
+            h('thead', null, h('tr', null,
+              h('th', null, '会话'), h('th', { className: 'uc-num' }, '轮次'),
+              h('th', { className: 'uc-num' }, 'tokens'), h('th', { className: 'uc-num' }, '金额'),
+              h('th', null, '最近'))),
+            h('tbody', null, perSession.map(function (entry) {
+              return h('tr', { key: entry.sessionId },
+                h('td', { className: 'uc-prompt', title: ledger.titleOf(entry.sessionId) }, ledger.titleOf(entry.sessionId)),
+                h('td', { className: 'uc-num' }, String(entry.turns)),
+                h('td', { className: 'uc-num' }, core.formatCompactTokens(entry.tokens)),
+                h('td', { className: 'uc-num' }, core.formatMoney(entry.amount)),
+                h('td', null, formatTime(entry.lastAt)))
+            })))
       } else if (rows.length === 0) {
         body = h('div', { className: 'uc-empty' }, snap.status === 'idle' ? '还没有读取数据，点右上角「刷新」开始。' : '这个范围内还没有轮次。')
       } else {
@@ -841,7 +877,14 @@
                 h('button', { className: 'uc-btn', type: 'button', onClick: function () { ledger.clearFocus() } }, '清除定位')),
               section === 'prices' ? priceEditor() : null,
               section === 'budget' ? budgetEditor() : null,
-              h('div', { className: 'uc-tabs' }, [['today', '今日'], ['month', '本月'], ['year', '本年'], ['all', '全部']].map(function (pair) {
+              h('div', { className: 'uc-tabs' }, MODES.map(function (pair) {
+                return h('button', {
+                  key: pair[0], type: 'button', className: 'uc-tab',
+                  'aria-pressed': mode === pair[0] ? 'true' : 'false',
+                  onClick: function () { setMode(pair[0]) },
+                }, pair[1])
+              })),
+              h('div', { className: 'uc-tabs' }, VIEWS.map(function (pair) {
                 return h('button', {
                   key: pair[0], type: 'button', className: 'uc-tab',
                   'aria-pressed': view === pair[0] ? 'true' : 'false',

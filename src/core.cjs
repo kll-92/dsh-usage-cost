@@ -376,10 +376,27 @@
     return (parts.hour >= 9 && parts.hour < 12) || (parts.hour >= 14 && parts.hour < 18)
   }
 
+  /** Local midnight (Beijing) of the day containing `atMs`. */
+  function startOfDay(atMs) {
+    var parts = shanghaiParts(atMs)
+    return Date.UTC(parts.year, parts.month - 1, parts.day) - SHANGHAI_OFFSET_MS
+  }
+
+  /** Local Monday 00:00 (Beijing) of the week containing `atMs`. */
+  function startOfWeek(atMs) {
+    var parts = shanghaiParts(atMs)
+    var mondayOffset = (parts.weekday + 6) % 7
+    return startOfDay(atMs) - mondayOffset * 86400000
+  }
+
   /** Whether one turn belongs to the given calendar view, relative to `now`. */
   function inView(endedAt, view, now) {
     if (typeof endedAt !== 'number') return false
     if (view === 'all') return true
+    if (view === 'week') {
+      var weekStart = startOfWeek(now)
+      return endedAt >= weekStart && endedAt < weekStart + 7 * 86400000
+    }
     if (view === 'today') return dateKey(endedAt) === dateKey(now)
     if (view === 'month') return monthKey(endedAt) === monthKey(now)
     if (view === 'year') return shanghaiParts(endedAt).year === shanghaiParts(now).year
@@ -437,6 +454,35 @@
       total.tokens += row.cost.tokens
     }
     return total
+  }
+
+  /** Per-session totals over decorated rows, sorted by amount. */
+  function bySession(rows) {
+    var map = {}
+    var list = []
+    for (var i = 0; i < rows.length; i += 1) {
+      var row = rows[i]
+      var key = row.sessionId
+      var entry = map[key]
+      if (entry === undefined) {
+        entry = { sessionId: key, turns: 0, tokens: 0, amount: 0, unpriced: 0, noData: 0, lastAt: 0 }
+        map[key] = entry
+        list.push(entry)
+      }
+      entry.turns += 1
+      if (typeof row.endedAt === 'number' && row.endedAt > entry.lastAt) entry.lastAt = row.endedAt
+      var cost = row.cost || { state: 'no-data' }
+      if (cost.state === 'priced') {
+        entry.amount += cost.amount
+        entry.tokens += cost.tokens
+      } else if (cost.state === 'unpriced') {
+        entry.unpriced += 1
+      } else {
+        entry.noData += 1
+      }
+    }
+    list.sort(function (a, b) { return b.amount - a.amount })
+    return list
   }
 
   function formatMoney(amount) {
@@ -600,6 +646,8 @@
     monthKey: monthKey,
     isPeak: isPeak,
     inView: inView,
+    startOfWeek: startOfWeek,
+    bySession: bySession,
     singleModel: singleModel,
     modelPrice: modelPrice,
     turnCost: turnCost,

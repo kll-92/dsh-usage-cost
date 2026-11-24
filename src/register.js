@@ -66,6 +66,21 @@
           }
         }
 
+        // Session display titles for the per-session view; optional like the others.
+        ctx.inject(['sessions'], (scoped) => {
+          ledger.setTitleResolver(function (sessionId) {
+            try {
+              var snapshot = scoped.sessions.list.getSnapshot()
+              var summary = snapshot && snapshot.byId ? snapshot.byId[sessionId] : undefined
+              return summary && summary.displayTitle
+            } catch (error) {
+              return undefined
+            }
+          })
+        })
+
+        ledger.setDiag({ build: 'week-by-session' })
+
         // Optional on purpose: a profile without account login must not block the
         // panel, and `remote.account` is only reachable when it is declared.
         ctx.inject(['remote.account'], (scoped) => {

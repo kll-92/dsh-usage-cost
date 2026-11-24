@@ -293,3 +293,31 @@ test('wallet: prefers CNY, folds the bonus wallet, and names the other states', 
   assert.equal(core.walletSummary({ status: 'ready', value: [], bonusWallets: [] }).state, 'empty')
   assert.equal(core.walletSummary(undefined).state, 'unavailable')
 })
+
+test('week view: Monday 00:00 starts the week, previous Sunday does not count', () => {
+  // 2026-11-23 is a Monday; 2026-11-22 is the Sunday before it.
+  const now = bj(2026, 11, 25, 15, 0)
+  assert.equal(core.inView(bj(2026, 11, 23, 0, 0), 'week', now), true)
+  assert.equal(core.inView(bj(2026, 11, 22, 23, 59), 'week', now), false)
+  assert.equal(core.inView(bj(2026, 11, 29, 23, 59), 'week', now), true)
+  assert.equal(core.inView(bj(2026, 11, 30, 0, 0), 'week', now), false)
+  assert.equal(core.startOfWeek(now), bj(2026, 11, 23, 0, 0))
+})
+
+test('bySession: aggregates per session, sorted by amount, excluding unpriced money', () => {
+  const rows = [
+    { sessionId: 'a', endedAt: 1, cost: { state: 'priced', amount: 0.01, tokens: 100 } },
+    { sessionId: 'b', endedAt: 2, cost: { state: 'priced', amount: 0.05, tokens: 500 } },
+    { sessionId: 'a', endedAt: 3, cost: { state: 'priced', amount: 0.02, tokens: 200 } },
+    { sessionId: 'c', endedAt: 4, cost: { state: 'unpriced' } },
+    { sessionId: 'c', endedAt: 5, cost: { state: 'no-data' } },
+  ]
+  const list = core.bySession(rows)
+  assert.deepEqual(list.map((row) => row.sessionId), ['b', 'a', 'c'])
+  assert.equal(list[1].amount.toFixed(4), '0.0300')
+  assert.equal(list[1].tokens, 300)
+  assert.equal(list[1].turns, 2)
+  assert.equal(list[1].lastAt, 3)
+  assert.equal(list[2].unpriced, 1)
+  assert.equal(list[2].noData, 1)
+})
