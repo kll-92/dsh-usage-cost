@@ -912,6 +912,7 @@
           found: !!row,
           hasRemote: ledger.hasRemote(),
           inlineStyle: 'plain-text',
+          inlinePlace: 'row-end',
         })
       } catch (error) { /* diagnostics must never break rendering */ }
 
@@ -930,6 +931,11 @@
         whiteSpace: 'nowrap',
         fontVariantNumeric: 'tabular-nums',
         cursor: 'pointer',
+        // The action row is a flex container: a positive order seats this after
+        // the built-in end info (usage pill + clock), which is the only place a
+        // slot entry can reach that is right of the usage readout.
+        order: 9,
+        marginLeft: 0,
       }
       const open = () => {
         try {
