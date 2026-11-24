@@ -911,19 +911,43 @@
           lastSessionId: props.sessionId,
           found: !!row,
           hasRemote: ledger.hasRemote(),
+          inlineStyle: 'plain-text',
         })
       } catch (error) { /* diagnostics must never break rendering */ }
 
-      return h('button', {
-        type: 'button',
+      // A span, not a button: the action row already has its own icon buttons,
+      // and a bare <button> inherits the browser's boxed chrome. Inline styles are
+      // deliberate — the row can render before the panel ever mounts its stylesheet.
+      const style = {
+        border: 0,
+        background: 'none',
+        padding: '0 2px',
+        margin: 0,
+        color: 'var(--dsw-alias-label-secondary)',
+        font: 'inherit',
+        fontSize: 12,
+        lineHeight: 'inherit',
+        whiteSpace: 'nowrap',
+        fontVariantNumeric: 'tabular-nums',
+        cursor: 'pointer',
+      }
+      const open = () => {
+        try {
+          if (layout) layout.selectPanel('usage-cost')
+        } catch (error) { /* the panel seat is unavailable; the pill stays inert */ }
+        try { ledger.focusTurn(props.sessionId, props.messageId) } catch (error) { /* ignore */ }
+      }
+      return h('span', {
+        role: 'button',
+        tabIndex: 0,
         className: 'uc-inline',
+        style: style,
         title: title,
-        onClick: function () {
-          try {
-            if (layout) layout.selectPanel('usage-cost')
-          } catch (error) { /* the panel seat is unavailable; the pill stays inert */ }
-          // Best effort: when the Turn is known the panel leads with it.
-          try { ledger.focusTurn(props.sessionId, props.messageId) } catch (error) { /* ignore */ }
+        onClick: open,
+        onKeyDown: (event) => {
+          if (event.key !== 'Enter' && event.key !== ' ') return
+          event.preventDefault()
+          open()
         },
       }, text)
     }
